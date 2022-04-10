@@ -20,7 +20,7 @@ function changeBg(url) {
 }
 async function changeWeatherUI() {
         let capitalSearch = search.value.trim()         
-        let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${capitalSearch}&appid=ebef9cab71c7a773a1b41e2eaa82348b`
+        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${capitalSearch}&appid=ebef9cab71c7a773a1b41e2eaa82348b`
         let data = await fetch(apiUrl).then(res=> res.json());   
         if (data.cod == 200) {
             let temp = Math.round(data.main.temp-273.15);
