@@ -26,8 +26,8 @@ body{
 
 }
 #weather{
-    max-width:40rem;
-    min-width:31rem;
+    max-width:32rem;
+    min-width:31em;
     border-radius:1rem;
     padding:3rem 2rem 5rem;
     background:  url(./cold.png) center/cover no-repeat;
