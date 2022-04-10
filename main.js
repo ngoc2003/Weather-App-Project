@@ -24,7 +24,7 @@ async function changeWeatherUI() {
         let data = await fetch(apiUrl).then(res=> res.json());   
         if (data.cod == 200) {
             let temp = Math.round(data.main.temp-273.15);
-            content.classList.remove('hide');
+            content.style.display = 'block';
             value.innerHTML = temp +' <sup>o</sup>C';
             city.innerText = data.name+' ,';
             country.innerText = data.sys.country;
@@ -40,7 +40,7 @@ async function changeWeatherUI() {
                 changeBg(backGround[0])
             }
         } else {
-            content.classList.add('hide');
+            content.style.display = 'none';
             alert('Hey Bro, I cant find your location:(. Please try other country instead!');
         }
 }
@@ -48,7 +48,8 @@ async function changeWeatherUI() {
 setInterval( () => {
     time.innerText = new Date().toLocaleString('vi');
 },1000);
-content.classList.add('hide');
+content.style.display = 'none';
+// content.classList.add('hide');
 search.addEventListener('keyup', (e)=> {
     if (e.key == 'Enter') {
         changeWeatherUI();

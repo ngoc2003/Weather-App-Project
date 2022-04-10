@@ -56,9 +56,7 @@ body{
     padding-top:3rem;
     text-align: center;
 }
-.content.hide{
-    display:none;
-}
+
 .capital{
     font-size: var(--font-size-nor);
     text-shadow: .2rem .2rem rgba(0,0,0,0.5);
