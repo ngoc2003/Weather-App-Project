@@ -1,0 +1,102 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    transition:.25s linear;
+}
+:root{
+    --font-primary: 'Poppins', sans-serif;
+    --font-size-nor: 3.5rem;
+    --font-size-medium: 3rem;
+    --font-size-big: 6rem;
+    --font-size-small:1.8rem;
+    --font-size-xsmall:1.5rem
+    
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: var(--font-primary);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,1)), url(./cold.png) center/cover no-repeat;
+
+}
+#weather{
+    max-width:40rem;
+    min-width:31rem;
+    border-radius:1rem;
+    padding:3rem 2rem 5rem;
+    background:  url(./cold.png) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search{
+    width:100%;
+    padding:.8rem 2rem;
+    border:none;
+    border-radius:0 2rem 0 2rem;
+    background: rgba(255, 255, 255, 0.3);
+    outline:none;
+    font-size: var(--font-size-small);
+    transition: .3s linear;
+    box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3);
+}
+.search:focus{
+    border-radius: 2rem 0 2rem 0;
+    background: rgba(255, 255, 255, 0.7);
+}
+.content{
+    color:#fff;
+    padding-top:3rem;
+    text-align: center;
+}
+.content.hide{
+    display:none;
+}
+.capital{
+    font-size: var(--font-size-nor);
+    text-shadow: .2rem .2rem rgba(0,0,0,0.5);
+}
+.time{
+    font-size: var(--font-size-xsmall);
+    font-weight:200;
+    line-height:1
+}
+.temperature{
+    font-size: var(--font-size-big);
+    text-shadow: .4rem .4rem rgba(0,0,0,0.7);
+    padding:2rem 1rem;
+    background-color: rgba(255,255,255,0.4);
+    box-shadow:.4rem .4rem rgba(0,0,0,0.5);
+    border:none;
+    border-radius: 10px;
+    margin: 2rem .3rem;
+    font-weight:800;
+}
+
+.des{
+    font-size: var(--font-size-medium);
+    font-weight:600;
+    text-shadow: .2rem .2rem rgba(0,0,0,0.7);
+    padding:1rem 0;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+.details div{
+    display:flex;
+    flex-direction: column;
+    padding:.5rem 2rem;
+    font-size: var(--font-size-xsmall);
+}
+
+.details div i{
+    margin: 1rem 0;
+}

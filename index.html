@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="weather">
+        <input type="text" class="search" placeholder="Search your location here. . .">
+        <div class="content">
+            <h1 class="capital">
+                <span class="city"></span>
+                <span class="country"></span>
+            </h1>
+
+            <div class="time">
+                
+            </div>
+
+            <div class="temperature">
+                <span class="value"></span>
+            </div>
+
+            <div class="des">
+               
+            </div>
+
+            <div class="details">
+                <div title="Visibility(tầm nhìn)">
+                    <i class="far fa-eye"></i>
+                    <span class="visibility"></span>
+                </div>
+                <div title="Wind(gió)">
+                    <i class="fas fa-wind"></i>
+                    <span class="wind"></span>
+                </div>
+                <div title="Clouds(mây)">
+                    <i class="fas fa-cloud-sun"></i>
+                    <span class="sun"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
